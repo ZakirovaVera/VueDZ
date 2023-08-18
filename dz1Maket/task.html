@@ -1,3 +1,8 @@
+<!-- Задачи по vue
+1.Создать кнопку "Перевернуть". При клике на кнопку текст кнопки, должен перевернуться и отобразиться в обратном порядке.
+2. Есть кнопка "Показать пароль" и поле для ввода пароля. При нажатии на кнопку, пароль должен либо отобразиться, либо скрыться. Задача на использование v-if
+2. Есть список элементов. Пользователь может добавлять новые элементы списка с текстом “Новый элемент списка” нажав на кнопку "Добавить".
+* При клике на элемент списка он должен быть удален. (по желанию) -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,8 +20,21 @@
         <ul id="ul">
             <li @click="removeListItem">Элемент списка 1</li>
         </ul>
+        <!-- Первая форма -->
+        <input v-show="!clickPassword" v-model="password2" type="password">
+        <input v-show="clickPassword" v-model="password2" type="text">
+        <button @click="clickPassword=!clickPassword">
+            <span v-show="!clickPassword">Показать
+                пароль</span>
+            <span v-show="clickPassword">Скрыть
+                пароль</span>
+        </button>
+        <hr />
+        <!-- Вторая форма -->
+        <!-- динамически присвоить свойству значение переменной -->
+        <input :type="passwordFieldType" v-model="password">
+        <button type="password" @click="switchVisibility">Показать/Скрыть пароль</button>
     </div>
-
 
     <script src="https://unpkg.com/vue@next"></script>
     <script>
@@ -25,6 +43,10 @@
                 return {
                     btnText: "Перевернуть",
                     count: 2,
+                    clickPassword: false,
+                    password2: "",
+                    password: "",
+                    passwordFieldType: "password"
                 };
             },
             methods: {
@@ -36,8 +58,8 @@
                     liLast.innerHTML = `Новый элемент списка ${this.count++}`;
                     ul.append(liLast);
                 },
-                removeListItem() {
-                    
+                switchVisibility() {
+                    this.passwordFieldType = this.passwordFieldType === "password" ? "text" : "password";
                 }
             },
         };
@@ -46,7 +68,3 @@
 </body>
 
 </html>
-<!-- Задачи по vue
-1.Создать кнопку "Перевернуть". При клике на кнопку текст кнопки, должен перевернуться и отобразиться в обратном порядке.
-2. Есть список элементов. Пользователь может добавлять новые элементы списка с текстом “Новый элемент списка” нажав на кнопку "Добавить".
-* При клике на элемент списка он должен быть удален. (по желанию) -->
