@@ -86,8 +86,123 @@ a {
         word-wrap: break-word;
         padding: 18px 0 21px;
     }
-    &__img{
-        background: #F4F0EC; border-radius: 70px;
+
+    &__img {
+        background: #F4F0EC;
+        border-radius: 70px;
         width: 100%;
+    }
+
+    &__button {
+        display: flex;
+        padding: 26px 49px 26px 48px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 18px;
+        background: #292F36;
+        box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+        color: #FFF;
+        text-align: center;
+        font-family: Jost;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22.5px;
+        letter-spacing: 0.36px;
+    }
+}
+
+.project {
+    &__heading {
+        color: $siteColorHeading;
+        text-align: center;
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 62.5px;
+        letter-spacing: 1px;
+        padding-top: 96px;
+        padding-bottom: 8px;
+    }
+
+    &__text {
+        color: $siteColorText;
+        text-align: center;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        padding-bottom: 93px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 56px;
+        column-gap: 104px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        width: 548px;
+        align-items: flex-start;
+        gap: 24px;
+
+
+        &__img {
+            // border-radius: 0px 80px 0px 0px;
+            background: #C4C4C4;
+            width: 100%;
+            height: 548px;
+            &-top-right {
+                border-radius: 0px 80px 0px 0px;
+            }
+        
+            &-top-left {
+                border-radius: 80px 0px 0px 0px;
+            }
+        
+            &-bottom-right {
+                border-radius: 0px 0px 80px 0px;
+            }
+        
+            &-bottom-left {
+                border-radius: 0px 0px 0px 80px;
+            }
+        }
+
+        &__content-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &__title {
+            color: $siteColorHeading;
+            font-family: DM Serif Display;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 31.25px;
+            letter-spacing: 0.5px;
+        }
+
+        &__text {
+            color: $siteColorText;
+            font-family: Jost;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0.22px;
+        }
     }
 }
