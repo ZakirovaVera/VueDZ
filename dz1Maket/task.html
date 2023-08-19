@@ -54,7 +54,7 @@
                     this.btnText = [...this.btnText].reduce((prev, next) => next + prev)
                 },
                 addListItem() {
-                    liLast = document.createElement('li');
+                    const liLast = document.createElement('li');
                     liLast.innerHTML = `Новый элемент списка ${this.count++}`;
                     ul.append(liLast);
                 },
