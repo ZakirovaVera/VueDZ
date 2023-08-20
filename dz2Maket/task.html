@@ -10,7 +10,13 @@
 
 <body>
     <div id="app">
-        
+        <ul>
+            <li v-for="product in products" :key="product.id">
+                Наименование - {{product.name}}, Цена - {{product.price}} рублей, Вес - {{product.weight}} грамм
+            </li>
+        </ul>
+        <button @click="Ascending">Сортировка по возрастанию цены</button>
+        <button @click="Descending">Сортировка по убыванию цены</button>
     </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script>
@@ -21,28 +27,38 @@
                         {
                             name: 'Яблоко',
                             price: 67,
+                            weight: 1000,
                         },
                         {
                             name: 'Апельсин',
                             price: 99,
+                            weight: 1000,
                         },
                         {
                             name: 'Бананы',
                             price: 88,
+                            weight: 1000,
                         },
                         {
                             name: 'Груша',
                             price: 144,
+                            weight: 1000,
                         },
                         {
                             name: 'Слива',
                             price: 105,
+                            weight: 1000,
                         },
                     ]
                 }
             },
             methods: {
-                
+                Ascending() {this.products.sort((a, b) => a.price - b.price);
+                 },
+                Descending() {
+                    this.Ascending();
+                    this.products.reverse();
+                },
             },
         }
         Vue.createApp(HelloVueApp).mount("#app");
