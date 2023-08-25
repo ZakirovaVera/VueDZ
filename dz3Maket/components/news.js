@@ -92,7 +92,7 @@ const News = {
                         num: 3,
                         text: "Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered."
                     },
-                    imgTwo: "img/new_building-1_24.12.png",
+                    imgTwo: "img/new_building-2_24.12.png",
                     textThree: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
                 },
             ],
