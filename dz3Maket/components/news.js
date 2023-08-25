@@ -96,21 +96,22 @@ const News = {
                     textThree: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.",
                 },
             ],
+            currentContents: [],
+            tags: ["Kitchen", "Bedroom", "Building"],
         }
     },
-    methods: {
-        // filterArticles(tag) {
-        //     Object.values(this.articles).filter((el) => el.tag === tag);
-        // }
+    created() {
+        this.currentContents = this.articles;
     },
-    computed: {
-        filterArticles() {
-            return Object.values(this.articles).filter((el) => el.tag === "Kitchen");
-        },
+    methods: {
+        filterArticles(tag) {
+            console.log(this.currentContents);
+            this.currentContents = Object.values(this.articles).filter((el) => el.tag === tag);
+        }
     },
     template: `
     <div class="news-articles__blog-conteiner">
-            <div class="news-articles__blog" v-for="article in articles" :key="article.id">
+            <div class="news-articles__blog" v-for="article in currentContents" :key="article.id">
                 <h2 class="news-articles__blog__heading">{{article.titleOne}}</h2>
                 <img class="news-articles__blog__img" :src="article.imgOne" alt="new_kitchen_22.12">
                 <nav class="news-articles__blog__nav">
@@ -155,12 +156,7 @@ const News = {
         <div class="news-articles__sidebar">
             <h3 class="news-articles__sidebar__heading">Tags</h3>
             <div class="news-articles__sidebar__btn-wrap">
-                <button class="news-articles__sidebar__btn" @click="filterArticles()">Kitchen</button>
-                <button class="news-articles__sidebar__btn">Bedroom</button>
-                <button class="news-articles__sidebar__btn">Building</button>
-                <button class="news-articles__sidebar__btn">Architecture</button>
-                <button class="news-articles__sidebar__btn">Kitchen Planning</button>
-                <button class="news-articles__sidebar__btn">Bedroom</button>
+            <button class="news-articles__sidebar__btn" @click="filterArticles(tag)" v-for="tag in tags" :key="tag.id">{{tag}}</button>
             </div>
         </div>
 `,
