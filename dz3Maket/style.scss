@@ -71,8 +71,14 @@ a {
     flex-direction: row;
     gap: 52px;
 
-    &__blog {
+    &__blog-conteiner {
         width: 799px;
+        display: flex;
+        row-gap: 150px;
+        flex-direction: column;
+    }
+
+    &__blog {
 
         &__heading {
             color: $siteColorHeading;

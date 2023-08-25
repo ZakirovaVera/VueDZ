@@ -64,8 +64,11 @@ a {
   flex-direction: row;
   gap: 52px;
 }
-.news-articles__blog {
+.news-articles__blog-conteiner {
   width: 799px;
+  display: flex;
+  row-gap: 150px;
+  flex-direction: column;
 }
 .news-articles__blog__heading {
   color: #292F36;
