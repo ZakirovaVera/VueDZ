@@ -1,17 +1,19 @@
 <template>
-  <OneMaketComponent/>
+  <OneMaketComponent />
+  <TwoMaketComponent />
 </template>
 
 <script>
 import OneMaketComponent from './components/OneMaketComponent.vue';
+import TwoMaketComponent from './components/TwoMaketComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    OneMaketComponent
-}
+    OneMaketComponent,
+    TwoMaketComponent
+  }
 }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>
