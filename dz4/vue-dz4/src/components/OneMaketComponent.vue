@@ -1,13 +1,13 @@
 <template>
     <header class="header center">
         <div class="header__left">
-            <a class="header__left__logo" href="#">
+            <a class="header__left__logo" href="index.html">
                 <img src="@/assets/img/Logo.svg" alt="logotip">
             </a>
             <h1 class="header__left__logo-text">Interno</h1>
         </div>
         <div class="header__right">
-            <a class="header__menu" href="#">Home</a>
+            <a class="header__menu" href="index.html">Home</a>
             <a class="header__menu" href="#">Project</a>
             <a class="header__menu" href="#">Blog</a>
         </div>
@@ -179,7 +179,7 @@
     <footer class="footer center">
         <div class="footer__left">
             <div class="header__left footer__left_logo">
-                <a class="header__left__logo" href="#">
+                <a class="header__left__logo" href="index.html">
                     <img src="@/assets/img/Logo.svg" alt="logotip">
                 </a>
                 <h1 class="header__left__logo-text">Interno</h1>
@@ -201,7 +201,7 @@
         <div class="footer__center">
             <h3 class="footer__center__heading">Pages</h3>
             <div class="footer__center__link-wrap">
-                <a class="footer__center__link" href="#">Home</a>
+                <a class="footer__center__link" href="index.html">Home</a>
                 <a class="footer__center__link" href="#">Project</a>
                 <a class="footer__center__link" href="#">Blog</a>
             </div>
