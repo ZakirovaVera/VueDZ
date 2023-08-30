@@ -8,10 +8,10 @@
     <div>
         <h2>{{ name }}</h2>
         <p >{{ formattedPrice.priceInDollars }}</p>
-        
+        <div>
             <template v-if="available">Available</template>
             <template v-else>Out of stock</template>
-        
+        </div>
     </div>
 </template>
 
