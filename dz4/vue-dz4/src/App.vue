@@ -1,13 +1,14 @@
 <template>
-  <HeaderComponent/>
+  <ProductDetailsComponent />
+  <HeaderComponent />
   <OneMaketComponent />
-  <FooterComponent/>
-  <HeaderComponent/>
+  <FooterComponent />
+  <HeaderComponent />
   <TwoMaketComponent />
-  <FooterComponent/>
-  <HeaderComponent/>
-  <ThreeMaketComponent/>
-  <FooterComponent/>
+  <FooterComponent />
+  <HeaderComponent />
+  <ThreeMaketComponent />
+  <FooterComponent />
 </template>
 
 <script>
@@ -15,7 +16,8 @@ import OneMaketComponent from './components/OneMaketComponent.vue';
 import TwoMaketComponent from './components/TwoMaketComponent.vue';
 import ThreeMaketComponent from './components/ThreeMaketComponent.vue';
 import HeaderComponent from './components/HeaderComponent.vue';
-import FooterComponent from './components/FooterComponent.vue'
+import FooterComponent from './components/FooterComponent.vue';
+import ProductDetailsComponent from './components/ProductDetailsComponent.vue'
 
 export default {
   name: 'App',
@@ -25,23 +27,25 @@ export default {
     ThreeMaketComponent,
     HeaderComponent,
     FooterComponent,
-}
+    ProductDetailsComponent,
+  }
 }
 </script>
 
 <style lang="scss">
-@import "@/assets/_vars.scss" ;
+@import "@/assets/_vars.scss";
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .center {
-    padding-left: calc(50% - $siteWidth / 2);
-    padding-right: calc(50% - $siteWidth / 2);
+  padding-left: calc(50% - $siteWidth / 2);
+  padding-right: calc(50% - $siteWidth / 2);
 }
 
 a {
-    text-decoration: none;
-}</style>
+  text-decoration: none;
+}
+</style>
