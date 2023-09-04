@@ -1,7 +1,7 @@
 <template>
     <div class="banner center">
     </div>
-    <section id="app" class="news-articles center">
+    <section class="news-articles center">
         <div class="news-articles__blog-conteiner">
             <div class="news-articles__blog" v-for="article in currentContents" :key="article.id">
                 <h2 class="news-articles__blog__heading">{{article.titleOne}}</h2>

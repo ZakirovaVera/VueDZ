@@ -1,11 +1,11 @@
 <template>
     <footer class="footer center">
         <div class="footer__left">
-            <div class="header__left footer__left_logo">
-                <a class="header__left__logo" href="index.html">
+            <div class="footer__left_logo">
+                <a class="footer__left_logo-a" href="index.html">
                     <img src="@/assets/img/Logo.svg" alt="logotip">
                 </a>
-                <h1 class="header__left__logo-text">Interno</h1>
+                <h1 class="footer__left_logo-text">Interno</h1>
             </div>
             <p class="footer__left__text">It is a long established fact that a reader will be distracted lookings.</p>
             <div class="footer__left__icons">
@@ -55,6 +55,23 @@ export default {
     align-items: start;
     justify-items: center;
     margin-bottom: 134px;
+
+    &__left_logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 10px;
+        padding-left: 4px;
+
+        &-text {
+            color: $siteColorHeading;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 50px;
+            word-wrap: break-word;
+            font-family: DM Serif Display;
+        }
+    }
 
     &__left__text {
         width: 393px;
