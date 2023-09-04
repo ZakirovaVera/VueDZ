@@ -7,6 +7,14 @@
         <div class="project-content__elements">
             <ProjectComponent v-for="article in currentContents" :key="article.id" :article="article" />
         </div>
+        <div class="pagination">
+            <ul class="pagination__ul">
+                <li class="pagination__li"><a class="pagination__a" href="#">01</a></li>
+                <li class="pagination__li"><a class="pagination__a" href="#">02</a></li>
+                <li class="pagination__li"><a class="pagination__a" href="#">03</a></li>
+                <li class="pagination__li"><a class="pagination__a" href="#"></a></li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -110,4 +118,36 @@ export default {
     gap: 30px;
     padding-bottom: 96px;
 }
-</style>
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__li {
+        display: inline-block;
+        list-style: none;
+        margin: 5px 5px;
+        font-size: 14px;
+        text-align: center;
+        width: 52px;
+        height: 52px;
+        border: 1px solid #CDA274;
+        border-radius: 50px;
+    }
+
+    &__a {
+        color: $siteColorHeading;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 52px;
+        text-transform: capitalize;
+    }
+}</style>

@@ -1,5 +1,5 @@
 <template>
-<div class="latest-post center">
+    <div class="latest-post center">
         <h2 class="latest-post__head">Latest Post</h2>
         <div class="latest-post__conteiner">
             <img class="latest-post__img" src="@/assets/img/post_photo.png" alt="latest Post">
@@ -279,5 +279,4 @@ export default {
         }
     }
 }
-
 </style>
