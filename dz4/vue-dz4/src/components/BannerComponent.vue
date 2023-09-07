@@ -1,13 +1,5 @@
 <template>
-    <div class="banner">
-        <!-- <div class="banner__img">
-            <img src="@/assets/img/bannerPhoto.png" alt="photo">
-        </div> -->
-        <div class="banner__text-box">
-            <h1 class="banner__heading">{{ banner.title }}</h1>
-            <p class="banner__text">{{ banner.text }}</p>
-        </div>
-    </div>
+
 </template>
 
 <script>

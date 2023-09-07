@@ -150,4 +150,5 @@ export default {
         line-height: 52px;
         text-transform: capitalize;
     }
-}</style>
+}
+</style>
