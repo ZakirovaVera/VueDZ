@@ -1,4 +1,6 @@
 <template>
+    <div class="banner-project center">
+    </div>
     <section class="project-detail center">
         <div class="project-detail__content" v-for="item in dataProject" :key="item">
             <h1 class="project-detail__title">{{ item.title }}</h1>
@@ -23,11 +25,89 @@
 </template>
 
 <script>
-    export default {
-        
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/zoom';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// import './style.css';
+
+// import required modules
+import { Zoom, Navigation, Pagination } from 'swiper/modules';
+
+import { mapState } from 'vuex';
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Zoom, Navigation, Pagination],
+        };
+    },
+    computed: {
+        ...mapState(['dataProject', 'imgs'])
     }
+}
 </script>
 
 <style lang="scss" scoped>
+.banner-project {
+    // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    background-image: url(@/assets/img/bannerProjectDetail.png);
+    background-size: cover;
+    background-position: center;
+    height: 351px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
+.swiper-slide {
+    overflow: hidden;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+
+    &__title {
+        text-align: center;
+        padding-bottom: 11px;
+        color: #292F36;
+        font-family: DM Serif Display;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        /* 62.5px */
+        letter-spacing: 1px;
+    }
+
+    &__text {
+        color: #4D5053;
+        font-family: Jost;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 33px */
+        letter-spacing: 0.22px;
+    }
+}
+
+.project-detail__content {
+    width: 658px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
 </style>

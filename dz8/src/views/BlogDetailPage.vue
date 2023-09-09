@@ -64,7 +64,7 @@ export default {
     data() {
         return {
             currentContents: [],
-        }
+        };
     },
     computed: {
         ...mapState(['blogArticles', 'blogTags'])
@@ -86,7 +86,7 @@ export default {
 
 .banner {
     // background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    background-image: url(@/assets/img/bannerPhoto.png);
+    background-image: url(@/assets/img/bannerBlogDetail.png);
     background-size: cover;
     background-position: center;
     height: 351px;
