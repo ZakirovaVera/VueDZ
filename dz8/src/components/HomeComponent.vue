@@ -4,12 +4,11 @@
             <h1 class="banner__heading">Let Your Home Be Unique</h1>
             <p class="banner__text">There are many variations of the passages of
                 lorem Ipsum fromavailable, majority.</p>
-            <button class="banner__button">Get Started
+            <router-link class="banner__button" to="/notpage">Get Started
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
                         stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
-                </svg>
-            </button>
+                </svg></router-link>
         </div>
         <div>
             <img class="banner__img" src="@/assets/img/banner.png" alt="banner_photo">
@@ -62,12 +61,12 @@
                         <h3 class="project__item__title">Modern Kitchan</h3>
                         <p class="project__item__text">Decor / Artchitecture</p>
                     </div>
-                    <div><router-link to="/project"><svg width="70" height="70" viewBox="0 0 70 70"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                            <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg></router-link></div>
+                    <div><router-link to="/project"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></router-link></div>
                 </div>
 
             </div>
@@ -79,12 +78,12 @@
                         <h3 class="project__item__title">Modern Kitchan</h3>
                         <p class="project__item__text">Decor / Artchitecture</p>
                     </div>
-                    <div><router-link to="/project"><svg width="70" height="70" viewBox="0 0 70 70"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
-                            <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg></router-link></div>
+                    <div><router-link to="/project"><svg width="70" height="70" viewBox="0 0 70 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></router-link></div>
                 </div>
 
             </div>
@@ -124,11 +123,12 @@
                     <h3 class="articles__item__title">Let’s Get Solution For Building Construction Work</h3>
                     <div class="articles__item__date">
                         <p class="articles__item__text">26 December,2022 </p>
-                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                            <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></router-link>
+                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></router-link>
                     </div>
                 </div>
             </article>
@@ -142,11 +142,12 @@
                         Ideas.</h3>
                     <div class="articles__item__date">
                         <p class="articles__item__text">22 December,2022 </p>
-                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                            <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></router-link>
+                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></router-link>
                     </div>
                 </div>
             </article>
@@ -160,11 +161,12 @@
                         Solution</h3>
                     <div class="articles__item__date">
                         <p class="articles__item__text">25 December,2022 </p>
-                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                            <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg></router-link>
+                        <router-link to="/blog"><svg width="52" height="53" viewBox="0 0 52 53" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></router-link>
                     </div>
                 </div>
             </article>
@@ -191,6 +193,9 @@ export default {
         position: absolute;
         padding: 208px 0 208px 53px;
         width: 434px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     &__heading {
@@ -484,5 +489,4 @@ export default {
             text-transform: capitalize;
         }
     }
-}
-</style>
+}</style>
