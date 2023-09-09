@@ -6,36 +6,20 @@
             </router-link>
         </div>
         <div class="header__right">
-            <router-link class="header__menu" :to="link.url" v-for="link in rightLinks" :key="link.id">{{ link.title
+            <router-link class="header__menu" :to="link.url" v-for="link in pageLinks" :key="link.id">{{ link.title
             }}</router-link>
         </div>
     </header>
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
     name: "HeaderComponent",
-    data() {
-        return {
-            rightLinks: [
-                {
-                    id: 1,
-                    title: 'Home',
-                    url: './'
-                },
-                {
-                    id: 2,
-                    title: 'Project',
-                    url: '/project'
-                },
-                {
-                    id: 3,
-                    title: 'Blog',
-                    url: '/blog'
-                },
-            ]
-        }
+    computed: {
+        ...mapState(['pageLinks'])
     },
+
 }
 </script>
 
