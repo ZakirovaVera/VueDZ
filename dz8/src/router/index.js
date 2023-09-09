@@ -4,6 +4,7 @@ import BlogPage from '@/views/BlogPage.vue'
 import ProjectPage from '@/views/ProjectPage.vue'
 import BlogDetailPage from '@/views/BlogDetailPage.vue'
 import ProjectDetailPage from '@/views/ProjectDetailPage.vue'
+import NotFountPage from '@/views/NotFountPage.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/blogDetail',
     name: 'BlogDetail',
     component: BlogDetailPage
+  },
+  {
+    path: '/:CatchAll(.*)',
+    name: '404',
+    component: NotFountPage
   },
 ]
 
